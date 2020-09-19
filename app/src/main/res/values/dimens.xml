@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="heading">18dp</dimen>
+    <dimen name="sub_heading">14dp</dimen>
+    <dimen name="heading_subHead_margin">5dp</dimen>
+    <dimen name="heading_left_margin">10dp</dimen>
+
+    //Related to dashboard modules
+    <dimen name="module_padding">15dp</dimen>
+    <dimen name="module_heading">12dp</dimen>
+    <dimen name="module_subheading">10dp</dimen>
+</resources>

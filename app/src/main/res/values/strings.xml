@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Learnr</string>
+
+    <string name="home">Home</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="profile">Profile</string>
+    <string name="explore">Explore</string>
+    <string name="looking_for">Looking for...</string>
+
+    <string name="dashboard_heading">Welcome to LEARNR</string>
+    <string name="dashboard_subheading">The app that lets you learn new things in a better way</string>
+
+
+</resources>

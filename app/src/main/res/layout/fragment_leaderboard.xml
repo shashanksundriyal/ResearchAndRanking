@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/leaderboard_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="14dp"
+        android:text="Leaderboard"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/podium_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.38"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/first_top_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.27"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/second_top_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.285"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/third_top_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.297"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/first_left_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.31"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/first_right_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.71"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/second_left_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/third_right_gl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/first_top_gl"
+        app:layout_constraintStart_toStartOf="@id/first_left_gl"
+        app:layout_constraintEnd_toEndOf="@id/first_right_gl">
+
+        <TextView
+            android:id="@+id/first_user_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            tools:text="2000 Points"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/first_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Divya"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toTopOf="@id/first_user_points"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/first_user_dp"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/leaderboard_img_1"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/first_user_name"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="48:35"
+            android:background="@drawable/icon_crown"
+            app:layout_constraintBottom_toTopOf="@id/first_user_dp"
+            app:layout_constraintStart_toStartOf="@id/first_user_dp"
+            app:layout_constraintEnd_toEndOf="@id/first_user_dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/second_top_gl"
+        app:layout_constraintStart_toStartOf="@id/second_left_gl"
+        app:layout_constraintEnd_toEndOf="@id/first_left_gl">
+
+        <TextView
+            android:id="@+id/second_user_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            tools:text="2000 Points"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/second_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Divya"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toTopOf="@id/second_user_points"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/second_user_dp"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/leaderboard_img_2"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/second_user_name"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/second_top_gl"
+        app:layout_constraintStart_toStartOf="@id/first_right_gl"
+        app:layout_constraintEnd_toEndOf="@id/third_right_gl">
+
+        <TextView
+            android:id="@+id/third_user_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            tools:text="2000 Points"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/third_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Divya"
+            android:textColor="@color/white"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toTopOf="@id/third_user_points"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/third_user_dp"
+            android:layout_width="50dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:src="@drawable/leaderboard_img_3"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/third_user_name"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaderboard_recyclerview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/leaderboard_list_bg"
+        app:layout_constraintTop_toBottomOf="@id/podium_bottom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

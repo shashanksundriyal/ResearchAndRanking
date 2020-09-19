@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#72B681</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorNavSelectTxt">#000</color>
+    <color name="colorNavUnselectetTxt">#AAA9A9</color>
+
+    <color name="white">#fff</color>
+    <color name="black">#000</color>
+    <color name="moduleSubHeading">#2FA9D8</color>
+</resources>
